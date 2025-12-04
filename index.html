@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fatah pacare aliya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* --- Happy & Luxurious Wedding Theme Styling --- */
+        :root {
+            --color-primary: #800000; /* Deep Burgundy/Maroon for elegance */
+            --color-secondary: #FFD700; /* Gold/Champagne for highlight */
+            --color-accent: #A0522D; /* Sienna/Brown for contrast */
+            --color-background: #FFFAFA; /* Snow White/Light Pinkish background */
+            --color-text: #333;
+        }
+
+        body { 
+            font-family: 'Playfair Display', serif; /* Changed font style for elegance */
+            background-color: var(--color-background); 
+            color: var(--color-text);
+        }
+        
+        /* Navigation Bar */
+        .navbar {
+            background-color: var(--color-primary) !important;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .navbar-brand { font-weight: bold; font-size: 1.6rem; color: var(--color-secondary) !important; }
+        .nav-link { color: #fff !important; transition: color 0.3s; font-weight: 500;}
+        .nav-link:hover { color: var(--color-secondary) !important; }
+        
+        /* Hero Section - Super Luxurious */
+        .hero { 
+            background: linear-gradient(135deg, var(--color-secondary) 0%, #FFEB8C 100%); 
+            color: var(--color-primary); 
+            padding: 160px 0; 
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .hero h1 { font-size: 4rem; font-weight: 900; margin-bottom: 5px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
+        .hero p { font-size: 1.8rem; font-style: italic; font-weight: 300; }
+        
+        /* Price Highlight */
+        .price-container {
+            margin-top: 40px;
+            padding: 15px 40px;
+            background-color: var(--color-primary); 
+            display: inline-block;
+            border-radius: 50px;
+            box-shadow: 0 0 25px rgba(128, 0, 0, 0.7);
+            border: 3px solid var(--color-secondary);
+        }
+        .price { 
+            font-size: 1.8rem; 
+            font-weight: 900; 
+            color: var(--color-secondary); 
+            margin: 0;
+            letter-spacing: 2px;
+            height:200px;
+        }
+
+        /* General Sections */
+        section { 
+            padding: 100px 0; /* Increased padding for more space */
+        }
+        h2 { 
+            color: var(--color-primary); 
+            margin-bottom: 40px; 
+            font-weight: bold;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        .bg-light { 
+            background-color: #FDF5E6 !important; /* Lighter Cream background */
+        }
+        
+        /* About Section List */
+        #about ul {
+            list-style: none;
+            padding-left: 0;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        #about li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            color: var(--color-accent);
+        }
+        #about li:before {
+            content: "✨ ";
+            font-weight: bold;
+            color: var(--color-secondary);
+        }
+
+        /* Gallery Section */
+        .gallery .image-wrapper {
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            margin-bottom: 15px;
+            border: 5px solid white; /* Frame effect */
+        }
+        .gallery img { 
+            width: 100%; 
+            height: 350px; /* Made images slightly bigger */
+            object-fit: cover; 
+            border-radius: 10px;
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother transition */
+        }
+        .gallery img:hover {
+            transform: scale(1.08);
+        }
+        .gallery h2 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: var(--color-accent);
+        }
+
+        /* Testimonials Section */
+        .testimonial-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow:  994px 115px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--color-primary);
+          
+        }
+        .testimonial-card:hover {
+            
+            height:40px;
+        }
+        .testimonial-card blockquote {
+            font-style: italic;
+            
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            height:1px;
+        }
+        .testimonial-card footer {
+            font-weight: bold;
+            height:0px;
+            margin-top:70px;
+        }
+
+        /* Map and Contact */
+        .map { 
+            height: 450px; 
+            border: 5px solid var(--color-primary); 
+            border-radius: 10px;
+        }
+        .btn-primary {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-primary) !important;
+            color: var(--color-secondary) !important;
+            padding: 25px 0 !important;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">fatah pacare aliya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Ucapan Saksi</a></li> <li class="nav-item"><a class="nav-link" href="#map">Lokasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>fatah jeruklegi dan aliya sidarja</h1>
+            <p>akan menikah pada tahun 2029.</p>
+            <div class="price-container">
+                <div class="price">modal nikah Rp 5.000.000.000</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>Tentang fatah dan aliya</h2>
+            <p class="text-center lead mx-auto" style="max-width: 800px;">fatah ini pernah sepondok dg aliya,dipondok andalusia banyumas,dan pernah liburan bareng aliya dipengandaran,dan salaman dg tanganya yg mulus,dan disitulah dia jatuh cinta padanya pada pandangan pertama,dan berniat melamarnya setelah lulus kuliah</p>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-8">
+                    <ul>
+                        <li>saksi:matuf,wahid,ucup,kitul,fajar dan lainya</li>
+                        <li>lokasi nikah:
+                        alun" sidarja</li>
+                        <li>nikah pada jari rabu
+                </li>
+                        <li>10:00 - 22:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2>Galeri Foto fatah dan aliya</h2>
+            <p class="text-center mb-5">Lihat pasangan ini </p>
+            <div class="row gallery">
+
+                <div class="col-md-4">
+                    <div class="image-wrapper">
+                        <img src="https://iili.io/fzDBkoF.th.png" alt="fzDBkoF.th.png">
+                    </div>
+                    <h2>zahra aliya</h2>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="image-wrapper">
+                        <img src="https://iili.io/fzD0VyP.th.jpg" alt="fzD0VyP.th.jpg">                        
+                    </div>
+                    <h2>fatah darman saputra</h2>
+                </div>
+               
+                <div class="col-md-4">
+                    <div class="image-wrapper">
+                        <img src="https://iili.io/fzbB81s.th.png" alt="fzbB81s.th.png">
+                    </div>
+                    <h2>calon dedek bayi</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2>Ucapan Selamat dari Saksi</h2>
+            <div class="row justify-content-center">
+                
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <blockquote class="mb-0">"Saya menjadi saksi cinta mereka sejak di Andalus! Semoga lancar sampai hari-H dan bahagia dunia akhirat."</blockquote>
+                        <footer class="blockquote-footer">matuf (Saksi Utama)</footer>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <blockquote class="mb-0">" dari liburan di Pengandaran sampai pelaminan. Fatah hebat, Aliya menawan. Selamat menempuh hidup baru!"</blockquote><footer class="blockquote-footer">wahid (Teman Pondok)</footer>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <blockquote class="mb-0">"Modal Rp 5 Miliar? Luar biasa! Bukti cinta Fatah kepada Aliya. Kami tunggu undangannya di alun-alun Sidaraja!"</blockquote>
+                        <footer class="blockquote-footer">kitul (Rekan Saksi)</footer>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="map" class="py-5 bg-light">
+        <div class="container">
+            <h2>Lokasi Pernikahan</h2>
+            <p class="text-center">Lihat lokasi di Google Maps:</p>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.816666!3d-6.200000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDAuMCJOIDEwNsKwNDknMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+            <p class="text-center mt-3">Link asli: <a href="https://maps.app.goo.gl/yrtBmkdcp88oyYUy5" target="_blank">Buka di Google Maps</a></p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p class="text-center">Minat kunjungi nikahanya? Hubungi matup!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2029,akad nikah dilaksanakan.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+              </html>
+                
